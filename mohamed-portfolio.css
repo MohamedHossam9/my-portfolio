@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+:root {
+    --main-color: #607d8b;
+}
+
+header {
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-weight: bold;
+}
+
+section.skills {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+h3 {
+    cursor: default;
+    color: var(--main-color);
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    border: 3px solid;
+    border-color: var(--main-color);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+div.skills {
+    width: 100%;
+}
+
+div.skills ul {
+    display: flex;
+    margin: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+ul li {
+    background-color: var(--main-color);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    list-style: none;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+li:hover {
+    transform: scale(1.05);
+    cursor: default;
+}
+
+section.projects {
+    margin: 10px;
+    text-align: center;
+}
+
+div.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+div.projects img {
+    width: 100%;
+}
+
+div.projects div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+div.projects div p {
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+div.projects div:hover {
+    transform: scale(1.05);
+    cursor: default;
+}
+
+footer {
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    font-size: 12px;
+    text-transform: none;
+    margin: 3px;
+}
